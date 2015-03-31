@@ -1,0 +1,21 @@
+{
+  "name": "Simple Timer",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "This is an example of Timer",
+  "icons": {
+    "16": "icons/icon16.png",
+    "128": "icons/icon128.png"        
+  },
+  "browser_action": {
+    "default_icon": "icons/icon128.png",
+    "default_title": "SimpleTimer",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": false
+  }
+}
