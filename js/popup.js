@@ -26,15 +26,15 @@ $(function(){
        console.log(count);                    
         if (count > 0) {
             count--;
-            //$('#timer').append('<h2>' + count + '</h2>');
             $('#timer').text(count);
-            timerId = window.setTimeout(function(){ // 無名関数で囲わないと動作しない
+            timerId = window.setTimeout(function(){ // 無名関数で囲まないと動作しない
                 countDown();
             }, 1000);
         } else {
             window.clearTimeout(timerId);                        
             running = false;            
             count = 0;
+            alert('Time Up!');
         }
 	};
 
