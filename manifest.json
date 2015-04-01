@@ -17,5 +17,8 @@
       "background.js"
     ],
     "persistent": false
-  }
+  },
+    "permissions":[
+        "notifications"
+    ]
 }
